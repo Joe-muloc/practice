@@ -3,7 +3,7 @@ from OpenCV_function import*
 def processingSingleImage(image):
   result = imageCopy(image)
 
-  result = convertColor(result, cv2.COLOR_BGR2GAY)
+  result = convertColor(result, cv2.COLOR_BGR2GRAY)
   result = cannyEdge(result, 100, 200)
   height, width = result.shape[:2]
   pt1 = (width * 0.45, height * 0.65)
