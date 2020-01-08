@@ -1,4 +1,4 @@
-from OpenCV_function import*
+from OpenCV_Function import*
 
 def processingSingleImage(image):
   result = imageCopy(image)
